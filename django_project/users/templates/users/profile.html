@@ -1,0 +1,6 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h1>{{ user.username }}</h1><!--user jest wbudowany, to nie jest przekazywana zmienna skądkolwiek, odnosi się do zalogowanego w tym momencie usera-->
+{% endblock content %}
