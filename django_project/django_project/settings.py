@@ -122,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')#pelna sciezka do directory gdzie sa uploadowane pliki
+MEDIA_URL = '/media/' #profile_pics/media - w taki sposob dostaniemy sie z przegladarki do tego directory
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
